@@ -7,3 +7,4 @@ tqdm
 nltk
 sentencepiece
 accelerate
+tabulate

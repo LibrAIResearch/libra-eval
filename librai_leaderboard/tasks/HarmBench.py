@@ -56,8 +56,8 @@ class HarmBench(BaseDirectRiskyTask):
             Answer: [/INST]''',
         }
 
-    def __init__(self, debug, output_dir):
-        super().__init__(debug, output_dir)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
         self.model = AutoModelForCausalLM.from_pretrained("cais/HarmBench-Llama-2-13b-cls", torch_dtype=torch.bfloat16, device_map="auto")
         self.tokenizer = AutoTokenizer.from_pretrained("cais/HarmBench-Llama-2-13b-cls", use_fast=False, truncation_side="left", padding_side="left")

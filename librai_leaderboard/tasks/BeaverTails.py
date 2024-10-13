@@ -5,13 +5,13 @@ from .base import BaseDirectRiskyTask
 
 # BeaverTails Bad Prompt
 class BeaverTailsBad(BaseDirectRiskyTask):
-    task_name = "beaver_tails_bad"
+    task_name = "beavertails_bad"
     task_data_file = "BeaverTailsBad.jsonl"
 
 
 # BeaverTails Good Prompt
 class BeaverTailsGood(BaseDirectRiskyTask):
-    task_name = "beaver_tails_good"
+    task_name = "beavertails_good"
     task_data_file = "BeaverTailsGood.jsonl"
 
     # TODO: better evaluation

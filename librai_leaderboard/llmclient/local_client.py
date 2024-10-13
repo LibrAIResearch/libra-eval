@@ -8,12 +8,6 @@ support_models = {"llama-3-8b-instruct":"meta-llama/Meta-Llama-3-8B-Instruct",
                   "falcon-7b-instruct":"tiiuae/falcon-7b-instruct",
                   "qwen1.5-7b-chat":"Qwen/Qwen1.5-7B-Chat",
                   "llama-2-13b":"meta-llama/Llama-2-13b-chat-hf",
-                  "k2-chat-2":"k2-chat-2",
-                  "k2-chat-3":"k2-chat-3",
-                  "k2-chat-3-sft1":"k2-chat-3-sft1",
-                  "k2-sft2":"k2-sft2", # from Yuqi 24 Jul
-                  "k2-sft2-t2":"k2-sft2-t2", # from Yuqi 24 Jul
-                  "k2-sft8":"k2-sft8", # from Yuqi 3 Aug
                   }
 
 

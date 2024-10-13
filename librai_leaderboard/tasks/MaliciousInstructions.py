@@ -43,10 +43,10 @@ class MaliciousInstructions(BaseDirectRiskyTask):
     task_data_file = "MaliciousInstructions.jsonl"
     llm_eval = False
 
-    def __init__(self, debug, output_dir):
+    def __init__(self, *args, **kwargs):
         """Initialize the absolute harmfulness predictor.
         """
-        super().__init__(debug, output_dir)
+        super().__init__(*args, **kwargs)
 
 
         device = (

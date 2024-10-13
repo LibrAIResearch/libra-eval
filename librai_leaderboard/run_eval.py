@@ -13,6 +13,7 @@ def eval():
     parser.add_argument("--client", type=str, default="openai")
     parser.add_argument("--task", type=str, default="do_not_answer", choices=TASKS.keys())
     parser.add_argument("--output_dir", type=str, default="outputs")
+    parser.add_argument("--n_samples_per_task", type=int, default=None)
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--rewrite_cache", action="store_true")
     args = parser.parse_args()
@@ -52,8 +53,8 @@ def eval():
 
     print(args)
 
-    task = TASKS[args.task](debug=args.debug, output_dir=args.output_dir)
-        
+    task = TASKS[args.task](debug=args.debug, output_dir=args.output_dir, n_samples_per_task=args.n_samples_per_task)
+
     st = time.time()
     score = task.run_pipeline(llm_client=llm_client, llm_eval_client=llm_eval_client, rewrite_cache=args.rewrite_cache)
     et = time.time()
