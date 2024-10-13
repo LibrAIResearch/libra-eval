@@ -49,6 +49,7 @@ from .RedEval import (
     RedEvalHarmfulQA,
     RedEvalDangerousQA,
 )
+from .RuLES import RuLES
 from .HExPHI import HExPHI
 from .TruthfulQA import (
     TruthfulQA_mc1,
