@@ -3,8 +3,6 @@ import json
 import pandas as pd
 from abc import ABC, abstractmethod
 
-from openai import OpenAI
-
 
 class Task(ABC):
     task_name = None
