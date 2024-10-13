@@ -39,9 +39,9 @@ pip install -r requirement.txt
 ```
 
 
-After thaat, run the following command:
+After that, run the following command:
 ```bash
-python librai_leaderboard.run_eval --client openai --model gpt-4o-mini --task <your_task_name> --debug --rewrite_cache
+python -m librai_leaderboard.run_eval --client openai --model gpt-4o-mini --task <your_task_name> --debug --rewrite_cache
 # Please note your_task_name is define in tasks/__init__.py and may different from the file name.
 ```
 Usually, it will finish within 1 minute, and cost less than 0.1 USD. 
@@ -141,5 +141,8 @@ When successfully added a task, please add the task info to the [Dataset Checkli
   - [x] Data
   - [x] Evaluation
 - CyberattackAssistance
+  - [x] Data
+  - [x] Evaluation
+- SafeText
   - [x] Data
   - [x] Evaluation

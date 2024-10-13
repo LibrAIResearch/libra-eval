@@ -57,6 +57,7 @@ from .RedEval import (
     RedEvalHarmfulQA,
     RedEvalDangerousQA,
 )
+from .SafeText import SafeText
 from .HExPHI import HExPHI
 from .TruthfulQA import TruthfulQA_mc1, TruthfulQA_mc2, TruthfulQA_gen
 from .XSTest import XSTest
@@ -121,6 +122,7 @@ TASKS = {
     "gandalf_ignore_instructions": GandalfIgnoreInstructions,
     "redeval_harmfulqa": RedEvalHarmfulQA,
     "redeval_dangerousqa": RedEvalDangerousQA,
+    "safe_text": SafeText,
     "hex_phi": HExPHI,
     "TruthfulQA_mc1": TruthfulQA_mc1,
     "TruthfulQA_mc2": TruthfulQA_mc2,
