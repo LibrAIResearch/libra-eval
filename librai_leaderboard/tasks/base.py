@@ -106,7 +106,7 @@ class Task(ABC):
             if self.llm_eval:
                 eval_messages = self.data_df.apply(self._single_eval_message, axis=1)
                 eval_response = self.fake_openai_batch_request(eval_messages, batch_fpath, llm_eval_client)
-                with open(eval_msg_fpath,"w") as f:
+                with open(eval_msg_fpath, "w") as f:
                     f.write(str(eval_messages.iloc[0]))
             else:
                 eval_response = self.data_df.apply(self._single_eval_message, axis=1)
